@@ -12,16 +12,16 @@ export const toyStore = {
     },
     getters: {
         toysToShow(state) {
+            // let toysToShow = state.toys;
+            // let searchStr = state.filterBy.name.toLowerCase();
+            // toysToShow = toysToShow.filter(t => {
+            //    return (t.name.toLowerCase().includes(searchStr) &&
+            //    t.price >= state.filterBy.fromPrice &&
+            //    ( !state.filterBy.toPrice ||  t.price <= state.filterBy.toPrice ) &&
+            //    (state.filterBy.type == 'all' || t.type === state.filterBy.type))&&
+            //    (state.filterBy.isInStock === null || state.filterBy.isInStock === t.inStock )
+            // })
             let toysToShow = state.toys;
-            let searchStr = state.filterBy.name.toLowerCase();
-            toysToShow = toysToShow.filter(t => {
-               return (t.name.toLowerCase().includes(searchStr) &&
-               t.price >= state.filterBy.fromPrice &&
-               ( !state.filterBy.toPrice ||  t.price <= state.filterBy.toPrice ) &&
-               (state.filterBy.type == 'all' || t.type === state.filterBy.type))&&
-               (state.filterBy.isInStock === null || state.filterBy.isInStock === t.inStock )
-            })
-            
             return toysToShow;
         },
     },
@@ -58,10 +58,10 @@ export const toyStore = {
         }
     },
     actions: {
-        loadToys(context) {
-            return toyService.query()
+        loadToys({ commit, state }) {
+            return toyService.query(state.filterBy)
                 .then(toys => {
-                    context.commit({ type: 'setToys', toys })
+                    commit({ type: 'setToys', toys })
                     return toys;
                 })
                 .catch(err => {

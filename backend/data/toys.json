@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "oMZ1k",
+    "name": "barbi",
+    "price": "90",
+    "type": "children",
+    "inStock": true,
+    "createdAt": "2021-07-05T20:45:02.626Z"
+  },
+  {
+    "_id": "ybLc2",
+    "name": "train",
+    "price": "145",
+    "type": "vehicle",
+    "inStock": "true",
+    "createdAt": "2021-07-03T13:32:59.819Z"
+  },
+  {
+    "_id": "ybLcJ",
+    "name": "doll",
+    "price": "30",
+    "type": "children",
+    "inStock": "true",
+    "createdAt": "2021-07-03T13:32:59.819Z"
+  },
+  {
+    "_id": "ybLtrcJ",
+    "name": "teddy bear",
+    "price": "170",
+    "type": "children",
+    "inStock": "false",
+    "createdAt": "2021-07-03T13:32:59.819Z"
+  },
+  {
+    "_id": "ybLgfcJ",
+    "name": "kite",
+    "price": "50",
+    "type": "sports",
+    "inStock": "true",
+    "createdAt": "2021-07-03T13:32:59.819Z"
+  },
+  {
+    "_id": "ybLtrJ",
+    "name": "rubber ducky",
+    "price": "100",
+    "type": "children",
+    "inStock": "true",
+    "createdAt": "2021-07-03T13:32:59.819Z"
+  },
+  {
+    "_id": "ygfcJ",
+    "name": "airplane",
+    "price": "150",
+    "type": "vehicle",
+    "inStock": "false",
+    "createdAt": "2021-07-03T13:32:59.819Z"
+  }
+]
