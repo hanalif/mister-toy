@@ -1,0 +1,185 @@
+@font-face {
+    font-family: gafata-regular;
+    src: url(/fonts/gafata/Gafata-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: gafata-regular;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a:active {
+    color: unset;
+}
+
+button {
+    cursor: pointer;
+}
+
+.app-main {
+    background-color: lightblue;
+    min-height: 90vh;
+}
+
+/* HEADER */
+
+.app-header {
+    background-color: lightslategrey;
+    padding: 20px;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* FILTER */
+
+.todos-filter {
+    background-color: rgb(176, 240, 123);
+    padding: 10px;
+}
+.todos-filter-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.check-box-container{
+    display: flex;
+    width: 100%;
+    gap: 1em;
+}
+
+
+.todos-filter-container{
+    gap: 12px;
+    margin-bottom: 1rem;
+    align-items: center;
+    width: 100%;
+ }
+ 
+ .filter-search-container{
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     width: 100%;
+     gap: 12px;
+    
+ }
+ 
+ 
+ .search-field-filter{
+     width: 100%;
+     background-color: #f1f3f4;
+     height:  2.74rem;;
+     border-radius: 8px;
+     border: 1px solid #1e1e1e00;
+     box-shadow: rgb(111 105 105 / 34%) -1px 0px 5px 0px;
+     padding-inline-start: 2.5rem;
+     font-family: abz-italic;
+     color: black;
+     font-size: 1.125rem
+ }
+ 
+ .search-field-filter:focus-visible {
+     outline: none;
+ }
+ 
+ /* Toy-List */
+
+ .toy-list{
+    gap: 10px;
+    grid-template-columns: repeat( auto-fill, minmax(238px, 1fr) );
+    grid-auto-flow: dense;
+    display: grid;
+ }
+ 
+ 
+ 
+ 
+
+/* Toy Preview */
+.toy-preview{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+/* DETAILS */
+
+.toy-details {
+    /* background-color: lightcoral; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+.toy-details pre {
+    background-color: brown;
+    padding: 3px;
+    color: whitesmoke;
+    font-size: 0.8em;
+}
+/* EDIT */
+
+.toy-edit {
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: lightslategrey;
+    padding: 10px;
+}
+
+/* ROUTES */
+
+.router-link-exact-active {
+    color: green
+}
+
+
+
+
+/* USER - MSG */
+.user-msg {
+    background-color: white;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    min-width: 200px;
+}
+.user-msg button {
+    float: right;
+}
+
+
+
+.success{
+    background-color: rgb(30, 207, 30);
+}
+
+.error{
+    background-color: red;
+}
+
