@@ -3,41 +3,21 @@
     src: url(/fonts/gafata/Gafata-Regular.ttf);
 }
 
-* {
-    box-sizing: border-box;
-}
 
-body{
-    font-family: gafata-regular;
-}
 
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-}
 
-a:active {
-    color: unset;
-}
 
-button {
-    cursor: pointer;
-}
 
-.app-main {
-    background-color: lightblue;
-    min-height: 90vh;
-}
+
+/* 
+.main-layout {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1.2rem;
+} */
 
 /* HEADER */
 
-.app-header {
-    background-color: lightslategrey;
-    padding: 20px;
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 /* FILTER */
 
@@ -157,7 +137,29 @@ footer {
     color: green
 }
 
+/* About page */
 
+.branches-map-container{
+    display: flex;
+    gap: 10px;
+}
+
+.branches-map-container{
+    display: flex;
+    justify-content: center;
+}
+
+.top-about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-page{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 
 /* USER - MSG */

@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Montserrat, sans-serif;
+    color: $clr2;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    background-size: 300px;
+    background-attachment: fixed;
+    font-family: gafata-regular;
+}
+
+
+
+p {
+    margin: 0 0 1rem;
+    max-width: 42ch;
+}
+
+img {
+    width: 100%;
+}
+
+a:active {
+    color: unset;
+}
+
+
+button {
+    cursor: pointer;
+}

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import toyApp from '../pages/toy-app.vue'
 import homePage from '../pages/home-page.vue'
+import aboutPage from '../pages/about-page.vue'
 import toyEdit from '../pages/toy-edit.vue'
 import toyDetails from '../pages/toy-details.vue'
 
@@ -12,6 +13,10 @@ const routes = [
   {
     path: '/',
     component: homePage
+  },
+  {
+    path: '/about',
+    component: aboutPage
   },
   {
     path: '/toy-app',

@@ -6,6 +6,7 @@
        <nav>
            <router-link to="/">Home</router-link> |
            <router-link to="/toy-app">Toys</router-link> |
+            <router-link to="/about">About us</router-link>
        </nav>
     </header>
 </template>
